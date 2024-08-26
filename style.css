@@ -1,3 +1,8 @@
+@font-face {
+    font-family: open-sans;
+    src: url(./asset/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -12,11 +17,12 @@ body {
     height: 100vh;
     flex-flow: column;
     margin-top: 80px;
+    background-color: rgb(73, 73, 73);
 }
 .numberBox{
-    border: 1px solid black;
     height: 100px;
     width: 400px;
+    border-bottom: solid 1px black;
     
 }
 
@@ -26,7 +32,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(5,100px);
-    gap: 6px;
     margin-left: 200px;
 }
 
@@ -37,11 +42,12 @@ button{
     font-size: 1.2em;
     border: none;
     transition: 0.6s;
+    font-family: open-sans,Arial, Helvetica, sans-serif;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: grey;
+    background-color: rgb(197, 197, 197);
 }
 
 .result{
@@ -49,10 +55,21 @@ button:hover{
     position: absolute;
     right: 0;
     letter-spacing: 10px;
+    color: black;
+    font-family: open-sans,Arial, Helvetica, sans-serif;
 }
 .numberBox{
     position: relative;
     display: flex;
     align-items: center;
+    background-color: rgb(241, 238, 59);
 }
 
+.body-container{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
